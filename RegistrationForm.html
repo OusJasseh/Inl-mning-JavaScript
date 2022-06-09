@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="Ousman Jasseh">
+   <title></title>
+   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+   
+   <div class="container mb-5 d-flex justify-content-center">
+       <div class="col-6 mt-5" >
+           <form id="regForm">
+            
+            <div class="form-floating mb-3">
+                <input type="text" id="firstName"  placeholder="Förnamn" class="form-control mb-3 needs-validation">
+                <label for="firstName">Förnamn</label>
+                <div id="error-firstName" class="invalid-feedback"><small></small> </div>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" id="lastName" placeholder="Efternamn" class="form-control mb-3 needs-validation ">
+                <label for="lastName">Efternamn</label>
+                <div id="error-lastName" class="invalid-feedback"><small>Du måste ange ett giltigt efternamn.</small> </div>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="email" id="regForm-email" placeholder="Email" class="form-control mb-3 needs-validation">
+                <label for="regForm-email">Email</label>
+                <div id="regForm-email-error" class="invalid-feedback"><small>Du måste ange ett giltigt e-postadress.</small> </div>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="password" id="regFormPassword" placeholder="Lösenord" class="form-control mb-3 needs-validation">
+                <label for="regForm-password">Lösenord</label>
+                <div id="regFormPassword-error" class="invalid-feedback"><small>Lösenordet måste vara minst 8 tecken.</small> </div>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="password" id="confirmPassword" placeholder="Bekräfta lösenord" class="form-control mb-3 needs-validation">
+                <label for="confirm-password">Bekräfta lösenord</label>
+                <div id="confirmPassword-error" class="invalid-feedback"><small>Lösenordet matchar inte.</small> </div>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" id="dob" placeholder="Födelsedatum" class="form-control mb-3 needs-validation">
+                <label for="dob">Födelsedatum</label>
+                <div id="dob-error" class="invalid-feedback"><small>Du måste ange ett giltigt födelsedatum.</small> </div>
+            </div>
+            
+            <div class="form-floating mb-3">
+                <input type="text" id="regFormAddress" placeholder="Adress" class="form-control mb-3 needs-validation">
+                <label for="regFormAddress">Address</label>
+                <div id="regFormAddress-error" class="invalid-feedback"><small>Du måste ange ett giltigt adress.</small> </div>
+            </div>
+                
+
+           </form>
+            
+       </div>
+       
+
+   </div>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   <script src="RegForm.js"></script>
+</body>
+</html>
